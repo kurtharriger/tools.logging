@@ -21,7 +21,7 @@ The latest API documentation can be found at http://clojure.github.com/tools.log
 The following short example should give you what you need to get started:
 
     (ns example.core
-      (:use [clojure.tools.logging :only (info error)]))
+      (:require [clojure.tools.logging :refer [info error]]))
 
     (defn divide [x y]
       (try
